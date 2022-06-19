@@ -8,4 +8,4 @@ services:
 before_script:
   - sleep 10
 script:
-  - curl http://localhost:9200/_status
+  - curl http://localhost:9200/_cat/health
