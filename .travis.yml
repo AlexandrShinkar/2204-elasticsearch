@@ -1,0 +1,11 @@
+dist: jammy
+group: dev
+arch:
+  - amd64
+  - arm64
+services:
+  - elasticsearch
+before_script:
+  - sleep 10
+script:
+  - curl http://localhost:9200/_status
